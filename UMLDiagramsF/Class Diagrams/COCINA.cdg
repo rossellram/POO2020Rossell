@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="COCINA">
+  <ClassDiagramComponents>
+    <Class name="ListaDeIngredientes" package="" visibility="public" xPosition="-209.0" yPosition="13.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Receta" package="" visibility="public" xPosition="440.0" yPosition="41.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Cocinero" package="" visibility="public" xPosition="729.0" yPosition="41.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Persona" package="" visibility="public" xPosition="970.0" yPosition="41.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Interface name="Partes" package="" visibility="public" xPosition="440.0" yPosition="225.0">
+      <Methods/>
+    </Interface>
+    <Class name="Ingrediente" package="" visibility="public" xPosition="92.0" yPosition="247.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Granos" package="" visibility="public" xPosition="-9.0" yPosition="406.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Pastas" package="" visibility="public" xPosition="197.0" yPosition="406.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="Heredan de I" source="Granos" target="Ingrediente"/>
+    <HasRelation name="compuesta" source="Receta" target="ListaDeIngredientes" type="Composition" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <ImplementsRelation name="Implementa" source="Receta" target="Partes"/>
+    <HasRelation name="asociado" source="Receta" target="Cocinero" type="Default" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <IsRelation name=" Heredan de I." source="Pastas" target="Ingrediente"/>
+    <HasRelation name="agregar" source="Ingrediente" target="ListaDeIngredientes" type="Aggregation" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="Cocinero" target="Persona"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
